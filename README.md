@@ -6,7 +6,7 @@ In this repository you can create 4 Pull Requests to any of the following langua
 
 **If you don't know what a Pull Request is, Kindly Visit this link to know more about it and then proceed.**
 
-(Click Here)["https://opensource.com/article/19/7/create-pull-request-github"]
+[Click Here]("https://opensource.com/article/19/7/create-pull-request-github")
 
 Here is a list of things you can contribute by making pull requests on this repository.
 - Python Basic Programs (Contains all it's modules, folders will be specified for each module)
