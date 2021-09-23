@@ -2,6 +2,8 @@
 
 **Welcome to IT Students of Nepal's Hacktoberfest Repository!**
 
+![](https://media.discordapp.net/attachments/834465205265236021/890532797633142834/Hacktoberfest.png?width=1419&height=539)
+
 In this repository you can create 4 Pull Requests to any of the following languages you know to contribute to open source and get rewards in return.
 
 **If you don't know what a Pull Request is, Kindly Visit this link to know more about it and then proceed.**
