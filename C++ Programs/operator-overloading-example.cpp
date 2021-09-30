@@ -39,5 +39,4 @@ int main()
         ++id;
         cout << "After Incrementing:" << endl;
         id.display(); //Calling display member function of class IncreDecre
-        return 0;
     }
