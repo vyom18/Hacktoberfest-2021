@@ -3,7 +3,7 @@ It's a basic game where a word (with shuffled letters) will be given and you hav
 
 ## Building from source
 You need a rust compiler to build this project. Visit [here for installation guide](https://www.rust-lang.org/tools/install)
-Once you installed the compiler follow the below steps compile and run the project.
+Once you installed the compiler follow the below steps to compile and run the project.
 
 * clone this repo
     ```bash
