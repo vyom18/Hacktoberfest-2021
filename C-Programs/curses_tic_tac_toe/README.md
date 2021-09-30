@@ -4,7 +4,7 @@
 ## Building
 - Requirements
   - Clang v9.0.0 or newer
-  - Ncurses (See [here for linux installation gudie](https://www.osetc.com/en/how-to-install-ncurse-library-in-ubuntu-debian-centos-fedora-linux.html))
+  - Ncurses (See [here for linux installation guide](https://www.osetc.com/en/how-to-install-ncurse-library-in-ubuntu-debian-centos-fedora-linux.html))
 
 - Clone this repo
   ```bash
