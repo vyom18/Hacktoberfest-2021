@@ -8,7 +8,7 @@
 
 - Clone this repo
   ```bash
-  git clone https://github.com/itsnporg/Hacktoberfest-2021g/C-Programs/curses_tic_tac_toe
+  git clone https://github.com/itsnporg/Hacktoberfest-2021/C-Programs/curses_tic_tac_toe
   cd Hacktoberfest-2021/C-Programs/curses_tic_tac_toe
   ```
 - Run make
