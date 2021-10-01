@@ -1,8 +1,12 @@
-const githubUsers = async () => {
-  let response = await fetch(`https://api.github.com/users`);
-  let user = await response.json();
+const gitHubUser = async () => {
+	try {
+	   const response = await fetch(`https://api.github.com/users`);
+	   const user = await response.json();
 
-  return user;
-};
-
-githubUsers();
+ 	   return user;
+		
+	} catch (err) {
+	   console.log(err);
+	}
+}
+gitHubUser();
