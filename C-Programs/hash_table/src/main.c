@@ -7,6 +7,7 @@ int main(int argc, char **argv)
 {
     // create hash table
     HashTable *new_table = new_hashtable(MAX_TABLE_SIZE);
+    
     hashtable_insert(new_table, "one", "one_value");
     hashtable_insert(new_table, "two", "two_value");
     hashtable_insert(new_table, "three", "three_value");
@@ -22,6 +23,9 @@ int main(int argc, char **argv)
     debug_table(new_table);
     hashtable_insert(new_table, "two", "two_value");
     debug_table(new_table);
+
+    // search hash table
+    printf("one value: %s", hashtable_search(new_table, "one"));
 
     delete_table(new_table);
 }
