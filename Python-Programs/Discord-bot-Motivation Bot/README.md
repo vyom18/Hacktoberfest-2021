@@ -1,4 +1,3 @@
-
 <img
      src ='Assets/icon.jpg' 
      align="left"     
@@ -7,16 +6,17 @@
      style="border-radius: 10px;"
      />
 
-## ` Motivation Bot `
+## `Motivation Bot`
 
 #### Bot that motivates with commands.
 
 ---
+
 ### Commands:
 
-* `$hey, $hello, $hi` :- Bot responds.
-* `$motivate` :- Generates motivating quotes.
-* `$help` :- Bot help.
+- `$hey, $hello, $hi` :- Bot responds.
+- `$motivate` :- Generates motivating quotes.
+- `$help` :- Bot help.
 
 ---
 

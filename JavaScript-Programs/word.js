@@ -1,5 +1,5 @@
 const noOfWords = (str) => {
-	return str.split(" ").length;
+  return str.split(" ").length;
 };
 console.log(noOfWords("Hello World, how are you?"));
 
