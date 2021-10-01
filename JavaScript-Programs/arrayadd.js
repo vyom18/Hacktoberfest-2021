@@ -5,16 +5,17 @@
   const sum=[];
   const l1 = []; //first array, insert values here 
   const l2 = []; //second array, insert values here
-
+  
+  let forLength = 0;
   //checking for the array with greater length 
   if (l1.length > l2.length) {
-   let forLength = l1.length; 
+   forLength = l1.length; 
   }
   else if (l1.length < l2.length) {
-    let forLength = l2.length;
+    forLength = l2.length;
   }
   else {
-    let forLength = l1.length;
+    forLength = l1.length;
   }
 
   //for loop that goes through all the elements of both arrays simultaneously
