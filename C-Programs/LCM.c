@@ -26,3 +26,4 @@ int find_lcm(int a, int b)  // function definition
         find_lcm(a,b);
         return temp;
     }
+}
