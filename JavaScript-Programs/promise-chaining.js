@@ -1,3 +1,4 @@
+// Creating Promise Object or Instance
 new Promise(function (resolve, reject) {
 	setTimeout(() => resolve(1), 1000); // (*)
 })
