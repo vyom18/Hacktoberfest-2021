@@ -1,3 +1,5 @@
+require("last")
+
 # A linked list
 class List
   # Nodes for the linked list.
