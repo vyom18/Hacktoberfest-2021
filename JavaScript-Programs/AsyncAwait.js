@@ -8,6 +8,5 @@ const gitHubUser = async () => {
 	} catch (err) {
 	   console.log(err);
 	}
-};
-
+}
 gitHubUser();
