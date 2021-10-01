@@ -1,6 +1,5 @@
 //uses of the arithmetic operator//
 #include <stdio.h>
-#include <conio.h>
 int main()
 {
     int a=6,b=3,add,sub,multi,division,reminder;
@@ -10,5 +9,5 @@ int main()
     division=a/b;
     reminder=a%b;
     printf("addition:%d\nsubtraction:%d\ndivision:%d\nmultiplication:%d\nremind:%d",add,sub,division,multi,reminder);
-    getch();
+    return 0;
 }
