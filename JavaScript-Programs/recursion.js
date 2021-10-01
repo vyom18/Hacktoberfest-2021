@@ -14,14 +14,14 @@
 
 // program to count down numbers to 1
 const countDown = (number) => {
-	// display the number
-	console.log(number);
+  // display the number
+  console.log(number);
 
-	// decrease the number value
-	const newNumber = number - 1;
+  // decrease the number value
+  const newNumber = number - 1;
 
-	// base case
-	newNumber > 0 && countDown(newNumber);
+  // base case
+  newNumber > 0 && countDown(newNumber);
 };
 
 countDown(6);

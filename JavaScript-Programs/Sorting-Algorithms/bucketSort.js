@@ -6,22 +6,21 @@ Bucket sort can be implemented with comparisons and therefore can also be consid
 
 //First we'll make our function to sort
 const bucketSort = (arr, size = 5) => {
-  
   //We use Math.min(), Math.max() and the spread operator (...) to find the minimum and maximum values of the given array.
   const min = Math.min(...arr);
   const max = Math.max(...arr);
-  
+
   //Then we use Array.from() and Math.floor() to create the appropriate number of buckets (empty arrays).
   const buckets = Array.from(
     { length: Math.floor((max - min) / size) + 1 },
     () => []
   );
-  
+
   //Then we use Array.prototype.forEach() to populate each bucket with the appropriate elements from the array.
-  arr.forEach(val => {
+  arr.forEach((val) => {
     buckets[Math.floor((val - min) / size)].push(val);
   });
-  
+
   //And finally we use Array.prototype.reduce(), the spread operator (...) and Array.prototype.sort() to sort each bucket and append it to the result.
   return buckets.reduce((acc, b) => [...acc, ...b.sort((a, b) => a - b)], []);
 };

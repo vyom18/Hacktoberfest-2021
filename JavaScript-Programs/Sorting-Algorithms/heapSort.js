@@ -8,12 +8,12 @@
 */
 
 //First we'll make our sorting function
-const heapsort = arr => {
+const heapsort = (arr) => {
   //We'll use the spread operator (...) to clone the original array, arr.
   const a = [...arr];
   //Also we're going to use closures to declare a variable, l, and a function heapify.
   let l = a.length;
-  
+
   //Then we'll use a for loop and Math.floor() in combination with heapify to create a max heap from the array.
   const heapify = (a, i) => {
     const left = 2 * i + 1;
