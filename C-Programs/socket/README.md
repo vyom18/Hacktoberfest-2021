@@ -4,23 +4,16 @@ Whereas client can only send a single message after that it will close the conne
 how to create socket, bind address, listen for new connection and accept it.
 
 # Usage
-## Server
-* Compile the server
-```bash
-./build_server.sh
-```
-* And run it by passing it port num as arg
+## Compile both server and client by running `./build.sh`
+
+## Run server
+While running the server pass the port number as argument
 ```bash
 ./server 2058
 ```
 
-## Client
-* Compile the client
-```bash
-./build_client
-```
-
-* And run it by passing the host and port num where server is listening
+## Run client
+While running client pass the host and port number where server is listening
 ```bash
 ./client 127.0.0.1 2058
 ```
