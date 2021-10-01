@@ -1,0 +1,15 @@
+# GcChat
+Allow users to create room, join others room and chat on group if they joined on same room.
+
+# Getting started
+## Installation
+    * Clone this repo and change directory to `Hacktoberfest-2021/Nodejs-Programs/gcchat`
+    * Install the dev/dependencies
+      ```bash
+      npm install
+      ```
+    * Start dev server and visit to `http://localhost:3000`
+      ```bash
+      npm run dev
+      ```
+
