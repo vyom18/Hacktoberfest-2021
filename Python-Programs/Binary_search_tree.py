@@ -26,6 +26,19 @@ class Node:
         print(self.node)
         if self.right:
             self.right.printBST()
+    def Search(self,root, key):
+        while root != None:
+            
+            # pass right subtree as new tree
+            if key > root.node:
+                root = root.right
+    
+            # pass left subtree as new tree
+            elif key < root.node:
+                root = root.left
+            else:
+                return True # if the key is found return 1
+        return False        
             
 n=int(input('Enter your Root node'))
 root=Node(n)
@@ -39,3 +52,9 @@ while 1:
         break
 print("Your final binary search tree is\n")
 root.printBST()
+x=int(input("Enter key to search for"))
+if root.Search(root, x):
+        print("Yes key exists in the tree")
+else:
+    print("Not found!")
+
