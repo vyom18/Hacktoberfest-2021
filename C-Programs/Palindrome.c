@@ -5,6 +5,7 @@ int main() {
     printf("Enter a number ");
     scanf("%d",&a);
     b = a;
+    d=0;
     while (b > 0) {
     c = b % 10;
     d = d * 10 + c;
