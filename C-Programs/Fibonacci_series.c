@@ -15,6 +15,9 @@ int main() {
     n2 = nxtNumber;
     nxtNumber = n1 + n2;
   }
+   printf("%d.",nxtNumber);
+   printf("\nThank you for your trying our feature.");
+ 
 
   return 0;
 }
