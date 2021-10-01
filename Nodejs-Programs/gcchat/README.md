@@ -9,6 +9,7 @@ Allow users to create room, join others room and chat on group if they joined on
 npm install
 ```
 
-## Run dev server and visit to `http://localhost:3000````bash
+## Run dev server and visit to `http://localhost:3000`
+```bash
 npm run dev
 ```
