@@ -1,4 +1,4 @@
-def maxProfit(self, prices: List[int]) -> int:
+def maxProfit(prices: List[int]) -> int:
     if len(prices) == 0: 
         return 0        
     else:
