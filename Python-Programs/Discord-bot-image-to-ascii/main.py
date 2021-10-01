@@ -3,10 +3,14 @@ import urllib.request
 import string
 import random
 from PIL import Image
+from dotenv import load_dotenv
+
+load_dotenv(".env")
 import os
 
+
 client = discord.Client()
-token = "TOEKN GOES HERE"
+token = os.environ["TOKEN"]
 
 
 @client.event
