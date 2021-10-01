@@ -20,10 +20,13 @@ max = maximum number you want to set, Default is 100.
 
 ```
 checkInput(myGuess)
+
 ```
+myGuess is the value of the user.
+
 this function used to check the number. It take 1 parameter.
 
 Pass on number set between range.
 
 ---
-Coder: Anil Oli
+Coder: [Anil Oli](https://github.com/aniloli42)
