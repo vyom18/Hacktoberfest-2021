@@ -1,9 +1,12 @@
-# Python program to reverse a entered number
-
-n = int(input('please give a number : '))
-print 'Number before being reversed : %d' % n
-reverse = 0
-while n != 0:
-    reverse = reverse * 10 + n % 10
-    n = n // 10
-print 'Number after being reversed : %d' % reverse
+#Python program to reverse a number using function
+def reverse_Num(Number):  #Define a function
+    Reverse=0             #declarae and initialize variable Reserve
+    while(Number>0):
+        Reminder=Number %10
+        Reverse=(Reverse *10)+Reminder
+        Number=Number//10;
+    return Reverse    #return reverse value to function
+Number=int(input("Please enter a number: "))
+Reverse=reverse_Num(Number)#Call the function
+print("The entered number is: %d" %Number)
+print("The reverse number is: %d" %Reverse)
