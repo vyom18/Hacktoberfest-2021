@@ -1,4 +1,4 @@
-* To find volume of sphere ,cylinder(πr2h) and cube using function overloading*/
+/* To find volume of sphere ,cylinder(πr2h) and cube using function overloading*/
 #include <iostream>
 #include <math.h>
 
