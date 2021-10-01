@@ -2,9 +2,8 @@
 
 
 const brain = require('brain.js')
-const fs = require('fs')
 
-const net = new brain.NeuralNetwork({hiddenLayers: [3})
+const net = new brain.NeuralNetwork({hiddenLayers: [3])
 
 const trainingData = [
   { input: [0, 0], output: [0] },
