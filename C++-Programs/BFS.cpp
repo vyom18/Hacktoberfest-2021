@@ -1,9 +1,7 @@
 ///breadth first search in cpp
 
-
 /*some test cases
 input(nodes,edges)   
-
 7 7
                   
 1 2                  
@@ -13,8 +11,7 @@ input(nodes,edges)
 2 6                  
 2 7                  -
 7 3     
-
--  out put
+out put
 1 2 3 4 5 6 7              */
 
 #include<bits/stdc++.h>
@@ -56,8 +53,4 @@ for(it=ad[nodd].begin();it!=ad[nodd].end();it++){
 }
 }
     return 0;
-    
 }
-
-
-
