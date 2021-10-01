@@ -6,7 +6,7 @@ int main(void)
     long minute,hour,second,inputsec,hourRemainder,minuteRemainder;
    
     printf("enter numbers in seconds ");
-    scanf("%d",&inputsec);
+    scanf("%ld",&inputsec);
 
     hour= inputsec/3600;
     hourRemainder=inputsec%3600;
@@ -16,7 +16,7 @@ int main(void)
 
     second=minuteRemainder;
 
-    printf("hour=%lu\nminute=%lu\nsecond=%lu",hour,minute,second);
+    printf("hour=%ld\nminute=%ld\nsecond=%ld",hour,minute,second);
 
 
 }
