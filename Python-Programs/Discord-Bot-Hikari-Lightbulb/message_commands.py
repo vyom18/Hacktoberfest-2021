@@ -20,7 +20,7 @@ async def avatar_command(ctx: lightbulb.Context, member: hikari.Member) -> None:
         timestamp = ctx.timestamp() # The time at which the context was created
     )
     embed.set_image(avatar_url)
-    await ctx.respond(embe=embed) # Sending the embed to the user's channel.
+    await ctx.respond(embed=embed) # Sending the embed to the user's channel.
 
 
 if __name__ == "__main__":
