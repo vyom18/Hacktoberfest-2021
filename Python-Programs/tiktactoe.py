@@ -5,7 +5,7 @@ import random
 
 
 def display_board(board):
-    print('\n'*100)
+    print("\n" * 100)
     print("Layout of the Tic Tac Toe")
     print(" 7 | 8 | 9 ")
     print("-----------")
@@ -20,27 +20,30 @@ def display_board(board):
     print("-----------")
     print(" {} | {} | {} ".format(board[1], board[2], board[3]))
 
+
 # get the player input for chosing X or O
 
 
 def player_input():
     marker = ""
-    while marker != "X" and marker != 'x' and marker != 'O' and marker != 'o':
+    while marker != "X" and marker != "x" and marker != "O" and marker != "o":
         marker = input("Player1, what do you want to take 'X' of 'O' : ")
 
     player1 = marker.upper()
-    if marker == 'X' or marker == 'x':
-        player2 = 'O'
+    if marker == "X" or marker == "x":
+        player2 = "O"
     else:
-        player2 = 'X'
+        player2 = "X"
 
     return (player1, player2)
+
 
 # place the player's marker on the board at given position
 
 
 def place_marker(board, marker, position):
     board[position] = marker
+
 
 # check if a player won the match
 
@@ -83,7 +86,17 @@ def space_check(board, position):
 
 
 def full_board_check(board):
-    return board[1] != " " and board[2] != " " and board[3] != " " and board[4] != " " and board[5] != " " and board[6] != " " and board[7] != " " and board[8] != " " and board[9] != " "
+    return (
+        board[1] != " "
+        and board[2] != " "
+        and board[3] != " "
+        and board[4] != " "
+        and board[5] != " "
+        and board[6] != " "
+        and board[7] != " "
+        and board[8] != " "
+        and board[9] != " "
+    )
 
 
 def player_choice(board):
@@ -108,11 +121,11 @@ def replay():
     return play == "yes"
 
 
-print('Hello buddy welcome!')
+print("Hello buddy welcome!")
 time.sleep(0.2)
 while True:
     player1_marker, player2_marker = player_input()
-    board = ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+    board = ["#", " ", " ", " ", " ", " ", " ", " ", " ", " "]
     display_board(board)
     game_on = True
     turn = choose_first()
