@@ -1,9 +1,6 @@
 // Javascript program to find sum of all numbers in an array
 
 const numbers = [1, 2, 3, 4, 5]
-let sum = 0;
+const sum = numbers.reduce((a, c) => a + c, 0);
 
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
-}
-console.log(sum)
+console.log(sum);
