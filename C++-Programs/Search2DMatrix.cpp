@@ -22,19 +22,19 @@ bool search2DMatrix(vector<vector<int>> &A, int B)
     //Here since the size of 2d vector is not disclosed 
     // we need to first obtain the starting and ending point of vector
    
-    int N = A.size();
-    int M = A[0].size();
-    int start = 0, end = N * M - 1;
+    int row = A.size();
+    int col = A[0].size();
+    int start = 0, end = row * col - 1;
     //here start is  the first index and end is last index
     while (start <= end)
     {
         //Finding the mid of 2D matrix 
         int mid = start + (end - start) / 2;
 
-        //since it is a 2D matrix we need two indices to tap in that element
+        //since it is a 2D matrix we need two indices to get the element
         //In this way we are playing with 2D matrix as 1D
-        int x = mid / M;
-        int y = mid % M;
+        int x = mid / col;
+        int y = mid % col;
 
         //next is normal binary search
         if (A[x][y] == B)
@@ -49,13 +49,13 @@ bool search2DMatrix(vector<vector<int>> &A, int B)
 
 int main()
 {
-    int m, n, B, val;
-    cin >> m >> n >> B;
+    int row, col, toFInd, val;
+    cin >> row >> col >> toFInd;
     vector<vector<int>> v;
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < row; i++)
     {
         vector<int> temp;
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < col; j++)
         {
             cin >> val;
             temp.push_back(val);
@@ -64,7 +64,7 @@ int main()
         temp.clear();
     }
 
-    bool ans = search2DMatrix(v, B);
+    bool ans = search2DMatrix(v, toFInd);
 
-    ans == true ? cout << "Found "<<B : cout << "Not found";
+    ans == true ? cout << "Found "<<toFInd : cout << "Not found";
 }
