@@ -3,10 +3,9 @@ import java.lang.Math;
 public class ArmstsrongNumber
 {  
 //function to check if the number is Armstrong or not  
-static boolean isArmstrong(int n)   
-{   
-    int m=n;
-		int sum=0;
+static boolean isArmstrong(int n){   
+	int m=n;
+	int sum=0;
 		while(m>0){
 			int x=m%10;
 			sum+=Math.pow(x,3);
@@ -14,7 +13,7 @@ static boolean isArmstrong(int n)
 		}
 
 		if(sum==n){
-	    return true;
+	   		return true;
 		}else{
 			return false;
 		} 
@@ -28,7 +27,7 @@ public static void main(String args[]){
     num=sc.nextInt();  
     System.out.println("Armstrong Number up to "+ num + " are: ");  
     for(int i=0; i<=num; i++){       
-      if(isArmstrong(i)) System.out.print(i+ ", "); 
+	    if(isArmstrong(i)) System.out.print(i+ ", "); 
     }
 }   
 }  
