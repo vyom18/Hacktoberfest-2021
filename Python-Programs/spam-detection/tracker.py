@@ -10,7 +10,7 @@ hide_streamlit_style = """
             
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-df = pd.read_csv('/Users/binayakjha/Desktop/Python/spam-detection/spam.csv',skiprows=2,names=['Label','EmailText'])
+df = pd.read_csv('spam.csv',skiprows=2,names=['Label','EmailText'])
 df.head(10)
 
 df.groupby('Label').describe()
