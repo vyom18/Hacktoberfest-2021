@@ -30,7 +30,6 @@ class NoDupArray {
             }
         }
     }//end insert()
-
     public boolean delete(long value) {//delete the element if it found
         for (int i = 0; i < this.nEliments; i++) {
             if(this.a[i]== value){
@@ -56,10 +55,6 @@ class NoDupArray {
 }
 
 public class NoDupArrayApp {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         NoDupArray x= new NoDupArray(6);
         x.insert(9);
