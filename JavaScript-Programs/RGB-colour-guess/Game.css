@@ -1,7 +1,7 @@
 body{
-	background-color:#ffff; 
+	background-color: #fff;
 	margin: 0;
-	font-family: "Avenir";
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .square{
@@ -22,7 +22,7 @@ body{
 h1{
 	text-align: center;
 	line-height: 1.1;
-	font-weight: normal;
+	font-weight: bold;
 	color: white;
 	background: steelblue;
 	margin: 0;
