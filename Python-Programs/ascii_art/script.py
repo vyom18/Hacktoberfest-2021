@@ -1,5 +1,10 @@
 from PIL import Image
 
+""""
+creates ascii symbol art from the given image 
+image should be in script.py folder
+"""
+
 # list the ASCII keys
 ASCII_KEYS = ['@', '#', '$', '%', '?', '*', '+', ';', ':', ',', '.']
 
