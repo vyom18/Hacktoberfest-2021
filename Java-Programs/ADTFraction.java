@@ -1,10 +1,8 @@
-package adtfractionapp;
 
 public class ADTFractionApp {
 
    
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) { 
 
         ADTFraction f1 = new ADTFraction(3, 5);
         f1.display();
@@ -25,7 +23,7 @@ class ADTFraction {
 
     private int n; //numerator
     private int d; //denomenator
-//---------------------------------------------------
+
 
     //default constructor
     public ADTFraction() {
@@ -34,7 +32,6 @@ class ADTFraction {
         this.n = 0;
         this.d = 1;
     }
-//---------------------------------------------------
 
     public ADTFraction(int a, int b) {//parameter constructor
 
@@ -47,7 +44,6 @@ class ADTFraction {
             System.out.println("denomerator cannot be 0,default values assinged");
         }
     }
-//---------------------------------------------------
 
     public void set(int a, int b) {//set numerator and denomenator
 
@@ -61,7 +57,6 @@ class ADTFraction {
         }
 
     }
-//---------------------------------------------------
 
     //add two fractions
     public ADTFraction plus(ADTFraction x) {
@@ -73,9 +68,9 @@ class ADTFraction {
         return f;
 
     }
-//---------------------------------------------------
 
-    public ADTFraction times(int a) {//multiply fraction by a number
+ //multiply fraction by a number
+    public ADTFraction times(int a) {
 
         int num, den;
         num = this.n * a;
@@ -85,8 +80,8 @@ class ADTFraction {
 
     }
 
-    //---------------------------------------------------
-    public ADTFraction times(ADTFraction x) {//multiply two fractions
+   //multiply two fractions
+    public ADTFraction times(ADTFraction x) {
 
         int num, dem;
         num = this.n * x.n;
@@ -95,7 +90,6 @@ class ADTFraction {
         return f3;
 
     }
-//---------------------------------------------------
 
     //reciprocal of a fraction
     public ADTFraction reciprocal() {
@@ -105,7 +99,6 @@ class ADTFraction {
         return f1;
 
     }
-//---------------------------------------------------
 
     //numerical value of a fraction
     public float value() {
@@ -113,13 +106,10 @@ class ADTFraction {
 
         return (float) this.n / this.d;
     }
-//---------------------------------------------------
 
     //display the fraction in the format n/d
     public void display() {
 
         System.out.println(this.n + "/" + this.d);
     }
-
-
 }
