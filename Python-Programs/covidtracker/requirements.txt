@@ -1,5 +1,4 @@
-colorama
-requests
-json
-urllib
+colorama==0.4.4
+requestsa==2.25.1
+
 
