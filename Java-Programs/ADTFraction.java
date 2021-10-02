@@ -14,9 +14,7 @@ public class ADTFractionApp {
         f4.display();
         ADTFraction f5 = f1.times(4);
         f5.display();
-
     }
-
 }
 
 class ADTFraction {
@@ -24,11 +22,8 @@ class ADTFraction {
     private int n; //numerator
     private int d; //denomenator
 
-
     //default constructor
     public ADTFraction() {
-
-
         this.n = 0;
         this.d = 1;
     }
@@ -60,7 +55,6 @@ class ADTFraction {
 
     //add two fractions
     public ADTFraction plus(ADTFraction x) {
-
         int num, den;
         num = this.d * x.n + this.n * x.d;
         den = this.d * x.d;
@@ -71,18 +65,15 @@ class ADTFraction {
 
  //multiply fraction by a number
     public ADTFraction times(int a) {
-
         int num, den;
         num = this.n * a;
         den = this.d;
         ADTFraction f1 = new ADTFraction(num, den);
         return f1;
-
     }
 
    //multiply two fractions
     public ADTFraction times(ADTFraction x) {
-
         int num, dem;
         num = this.n * x.n;
         dem = this.d * x.d;
@@ -93,23 +84,17 @@ class ADTFraction {
 
     //reciprocal of a fraction
     public ADTFraction reciprocal() {
-
-
         ADTFraction f1 = new ADTFraction(this.d, this.n);
         return f1;
-
     }
 
     //numerical value of a fraction
     public float value() {
-
-
         return (float) this.n / this.d;
     }
 
     //display the fraction in the format n/d
     public void display() {
-
         System.out.println(this.n + "/" + this.d);
     }
 }
