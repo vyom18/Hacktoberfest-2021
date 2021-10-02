@@ -1,5 +1,5 @@
 // include file system module
-var fs = require("fs");
+let fs = require("fs");
 
 // This reads the file named example.html
 fs.readFile("example.html", function (err, data) {
