@@ -1,3 +1,3 @@
-name = str(input("Enter Your Name: "));
+name = str(input("Enter Your Name: "))
 
-print("Hello "+ str(name))
+print("Hello " + str(name))
