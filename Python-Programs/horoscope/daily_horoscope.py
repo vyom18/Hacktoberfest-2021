@@ -1,13 +1,12 @@
-'''
+"""
     Program to get horoscope for
     Yesterday, Today and Tomorrow
     of any zodiac sign
-'''
+"""
 
-import requests
 import inquirer
+import requests
 from bs4 import BeautifulSoup
-
 
 zodiac_sign = {
     "Aquarius": 1,

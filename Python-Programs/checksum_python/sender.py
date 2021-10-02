@@ -1,6 +1,7 @@
 # Import socket module 
-import socket                
-   
+import socket
+
+
 def xor(a, b): 
    
     # initialize result 
