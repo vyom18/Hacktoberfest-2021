@@ -40,13 +40,13 @@ public class Main extends Application{
         Button btn9 = new Button("9");
         Button btn00 = new Button("00");
 
-        Button btnTitik = new Button(".");
-        Button btnPersen = new Button("%");
-        Button btnHapusAll = new Button("AC");
-        Button btnTambah = new Button("+");
-        Button btnKurang = new Button("-");
-        Button btnBagi = new Button("/");
-        Button btnKali = new Button("x");
+        Button btnDot = new Button(".");
+        Button btnPercent = new Button("%");
+        Button btnDeleteAll = new Button("AC");
+        Button btnAdd = new Button("+");
+        Button btnSubtract = new Button("-");
+        Button btnDevide = new Button("/");
+        Button btnMultipy = new Button("x");
         Button btnEqual = new Button("=");
 
         Label data = new Label("");
@@ -70,42 +70,42 @@ public class Main extends Application{
         KlikBtn(btn8, data);
         KlikBtn(btn9, data);
         KlikBtn(btn00, data);
-        KlikBtn(btnTitik, data);
-        KlikBtn(btnBagi, data);
-        KlikBtn(btnKali, data);
+        KlikBtn(btnDot, data);
+        KlikBtn(btnDevide, data);
+        KlikBtn(btnMultipy, data);
         KlikBtn(btnEqual, data);
-        KlikBtn(btnTambah, data);
-        KlikBtn(btnKurang, data);
-        KlikBtn(btnHapusAll, data);
-        KlikBtn(btnPersen, data);
+        KlikBtn(btnAdd, data);
+        KlikBtn(btnSubtract, data);
+        KlikBtn(btnDeleteAll, data);
+        KlikBtn(btnPercent, data);
 
 
 
 
-        TampilkanBtnOp2(gridPane, btnHapusAll,0,4, 2,1);
-        TampilkanBtnOp2(gridPane, btnPersen,2,4);
+        ShowBtnOp2(gridPane, btnDeleteAll,0,4, 2,1);
+        ShowBtnOp2(gridPane, btnPercent,2,4);
 
-        TampilkanBtnOp(gridPane, btnBagi,3,4);
-        TampilkanBtnOp(gridPane, btnKali,3,5);
-        TampilkanBtnOp(gridPane, btnKurang,3,6);
-        TampilkanBtnOp(gridPane, btnTambah,3,7);
-        TampilkanBtnOp(gridPane, btnEqual,3,8);
+        ShowBtnOp(gridPane, btnDevide,3,4);
+        ShowBtnOp(gridPane, btnMultipy,3,5);
+        ShowBtnOp(gridPane, btnSubtract,3,6);
+        ShowBtnOp(gridPane, btnAdd,3,7);
+        ShowBtnOp(gridPane, btnEqual,3,8);
 
-        TampilkanBtn(gridPane, btn7,0,5);
-        TampilkanBtn(gridPane, btn8,1,5);
-        TampilkanBtn(gridPane, btn9,2,5);
+        ShowBtn(gridPane, btn7,0,5);
+        ShowBtn(gridPane, btn8,1,5);
+        ShowBtn(gridPane, btn9,2,5);
 
-        TampilkanBtn(gridPane, btn4,0,6);
-        TampilkanBtn(gridPane, btn5,1,6);
-        TampilkanBtn(gridPane, btn6,2,6);
+        ShowBtn(gridPane, btn4,0,6);
+        ShowBtn(gridPane, btn5,1,6);
+        ShowBtn(gridPane, btn6,2,6);
 
-        TampilkanBtn(gridPane, btn1,0,7);
-        TampilkanBtn(gridPane, btn2,1,7);
-        TampilkanBtn(gridPane, btn3,2,7);
-        TampilkanBtn(gridPane,btn0, 1,8);
+        ShowBtn(gridPane, btn1,0,7);
+        ShowBtn(gridPane, btn2,1,7);
+        ShowBtn(gridPane, btn3,2,7);
+        ShowBtn(gridPane,btn0, 1,8);
 
-        TampilkanBtn(gridPane,btn00, 0,8);
-        TampilkanBtn(gridPane,btnTitik, 2,8);
+        ShowBtn(gridPane,btn00, 0,8);
+        ShowBtn(gridPane,btnDot, 2,8);
 
         data.setAlignment(Pos.CENTER_RIGHT);
         data.setTextAlignment(TextAlignment.RIGHT);
@@ -213,17 +213,17 @@ public class Main extends Application{
     }
 
 
-    private void TampilkanBtn(GridPane gridPane, Button btn, int kolom, int baris) {
+    private void ShowBtn(GridPane gridPane, Button btn, int kolom, int baris) {
 
         gridPane.add(btn,kolom,baris);
         btn.setStyle(" -fx-min-width: 60; -fx-min-height: 60; -fx-text-fill: #fff; -fx-font-size: 24; -fx-background-radius: 24");
     }
-    private void TampilkanBtnOp(GridPane gridPane, Button btn, int kolom, int baris) {
+    private void ShowBtnOp(GridPane gridPane, Button btn, int kolom, int baris) {
 
         gridPane.add(btn,kolom,baris);
         btn.setStyle(" -fx-min-width: 60; -fx-min-height: 60; -fx-text-fill: #E87676; -fx-font-size: 22; -fx-background-radius: 24; -fx-font-weight: bold");
     }
-    private void TampilkanBtnOp2(GridPane gridPane, Button btn, int kolom, int baris) {
+    private void ShowBtnOp2(GridPane gridPane, Button btn, int kolom, int baris) {
 
         gridPane.add(btn,kolom,baris);
         btn.setStyle(" " +
@@ -237,7 +237,7 @@ public class Main extends Application{
 
 
     }
-    private void TampilkanBtnOp2(GridPane gridPane, Button btn, int kolom, int baris, int kolomspan, int barisspan) {
+    private void ShowBtnOp2(GridPane gridPane, Button btn, int kolom, int baris, int kolomspan, int barisspan) {
 
         gridPane.add(btn,kolom,baris, kolomspan, barisspan);
         btn.setStyle(" " +
