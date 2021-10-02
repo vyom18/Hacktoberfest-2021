@@ -16,7 +16,7 @@ def translate_word(word: str) -> str:
     return word[vowel_index:] + word[:vowel_index] + "ay"
 
 
-def translateList(word_list: list[str]) -> list[str]:
+def translate_list(word_list: list[str]) -> list[str]:
     return [translate_word(word) for word in word_list]
 
 
@@ -24,4 +24,4 @@ if __name__ == "__main__":
     print(starts_with_vowel("apple"))
     print(starts_with_vowel("ball"))
     print(translate_word("hockey"))
-    print(translateList(["hello", "I", "am", "very", "exited", "to", "see", "you"]))
+    print(translate_list(["hello", "I", "am", "very", "exited", "to", "see", "you"]))
