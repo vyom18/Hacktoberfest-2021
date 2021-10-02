@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 class NoDupArray {
 
     private long[] a;//ref to array a
@@ -48,8 +41,6 @@ class NoDupArray {
                 System.out.println("value deleted");
                 return true;
             }
-
-
         }
         System.out.println("value not found;");
         return false;
@@ -77,10 +68,6 @@ public class NoDupArrayApp {
         x.insert(6);
         x.insert(2);
         x.display();
-
-
-
-
-    }
+  }
 
 }
