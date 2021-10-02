@@ -7,7 +7,7 @@ public class rotate_array_180_degrees {
     public static void main(String[] args) {
         Scanner scan =  new Scanner(System.in);
         System.out.println("=== Rotate by 180 degrees ===");
-        System.out.printf("Please input total ordo m x n: ");
+        System.out.printf("Please input your total ordo m x n: ");
         int m = scan.nextInt();
         int n = scan.nextInt();
         int[][] arr = new int[m][n];
